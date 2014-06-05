@@ -38,11 +38,7 @@ public class App
 			DB db = mongo.getDB("testdb");
 			DBCollection coll = db.getCollection("users");
 			
-			BasicDBObject doc = new BasicDBObject("username", "jan")
-			.append("password", "123456");
-			coll.insert(doc);
-			
-			BasicDBObject doc2 = new BasicDBObject("username", "hans-wurst")
+			BasicDBObject doc = new BasicDBObject("username", "dieter")
 	        .append("password", "123456");
 			coll.insert(doc);
 			
