@@ -35,12 +35,12 @@ public class App
 			MongoClient mongo = new MongoClient("localhost", 27017);
 			List<String> dbs = mongo.getDatabaseNames();
 			
-			DB db = mongo.getDB("testdb");
-			DBCollection coll = db.getCollection("users");
+			DB db = mongo.getDB("arc");
+			DBCollection coll = db.getCollection("word");
 			
-			BasicDBObject doc = new BasicDBObject("username", "dieter")
-	        .append("password", "123456");
-			coll.insert(doc);
+//			BasicDBObject doc = new BasicDBObject("username", "dieter")
+//	        .append("password", "123456");
+//			coll.insert(doc);
 			
 			DBCursor cursor = coll.find();
 			
