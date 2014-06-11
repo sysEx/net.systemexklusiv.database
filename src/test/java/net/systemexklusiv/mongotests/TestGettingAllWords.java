@@ -72,7 +72,7 @@ public class TestGettingAllWords
 //			StringBuilder sb = new StringBuilder();
 			   while(cursor.hasNext()) {
 				    BasicDBObject obj = (BasicDBObject) cursor.next();
-//				    System.out.println(obj.toString());
+				    System.out.println(obj.toString());
 				    result.add(obj.toString());
 //				    sb.append("_id: " + obj.getString("_id"));
 //				    sb.append("\n");
